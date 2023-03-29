@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .bgbody {
+    @apply snap-mandatory  snap-y bg-center bg-cover w-full h-screen px-4 bg-no-repeat;
+  }
+  .flexbody {
+    @apply flex justify-between snap-start mx-auto items-center;
+  }
+  .btn {
+    @apply hover:rounded  hover:bg-slate-300;
+  }
+}
+body {
+  font-family: "Rubik", sans-serif;
+  color: #393c41;
+}
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
